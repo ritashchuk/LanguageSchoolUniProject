@@ -1,0 +1,131 @@
+{
+  "nameSchool": "ABC Language School",
+  "address": {
+    "street": "Chemická 900",
+    "city": "Praha",
+    "country": "Česká republika",
+    "zipcode": "148 00"
+  },
+  "course": [
+    {
+      "@courseId": "1",
+      "title": "Intensive in-class and online group English courses",
+      "language": "English",
+      "level": "All",
+      "description": "Dive into interactive lessons led by expert instructors and achieve fluency with the support of a dynamic\n                    learning community.",
+      "price": {
+        "@currency": "USD",
+        "#text": "50.00"
+      },
+      "lectors": {
+        "nameLector": "Robert Gilbert",
+        "nationality": "USA",
+        "education": "MA in English Linguistics",
+        "nativeLanguage": "English",
+        "contact": {
+          "@lectorId": "1",
+          "email": "robert.gilbert@example.com"
+        }
+      },
+      "startDate": "2024-09-01",
+      "endDate": "2024-07-01",
+      "durationInHours": "2",
+      "capacity": "10",
+      "publishingDate": "2024-04-20",
+      "basicBookForCourse": "SpeakOut"
+    },
+    {
+      "@courseId": "2",
+      "title": "Intensive in-class and online group Czech courses",
+      "language": "English",
+      "level": "All",
+      "description": "Provide rapid language acquisition and fluency, combining traditional classroom instruction with digital tools.",
+      "price": {
+        "@currency": "USD",
+        "#text": "50.00"
+      },
+      "lectors": {
+        "nameLector": "Josef Petr",
+        "nationality": "Czech Republic",
+        "education": "Ph.D. in Czech Language and Literature",
+        "nativeLanguage": "Czech",
+        "contact": {
+          "@lectorId": "2",
+          "email": "josef.petr@example.com"
+        }
+      },
+      "startDate": "2024-07-01",
+      "endDate": "2024-07-01",
+      "durationInHours": "2",
+      "capacity": "10",
+      "publishingDate": "2024-04-20",
+      "basicBookForCourse": "Čeština pro cizince"
+    },
+    {
+      "@courseId": "3",
+      "title": "Intensive in-class and online group German courses",
+      "language": "German",
+      "level": "All",
+      "description": "Ensuring rapid language mastery through immersive experiences and collaborative learning.",
+      "price": {
+        "@currency": "USD",
+        "#text": "50.00"
+      },
+      "lectors": {
+        "nameLector": "Mirabella Schwarz",
+        "nationality": "Germany",
+        "education": "Master's Degree in German Studies",
+        "nativeLanguage": "German",
+        "contact": {
+          "@lectorId": "3",
+          "email": "mirabella.schwarz@example.com"
+        }
+      },
+      "startDate": "2024-05-01",
+      "endDate": "2024-07-01",
+      "durationInHours": "2",
+      "capacity": "10",
+      "publishingDate": "2024-04-20",
+      "basicBookForCourse": "Willkommen!"
+    },
+    {
+      "@courseId": "4",
+      "title": "Intensive in-class and online group Spanish courses",
+      "language": "Spanish",
+      "level": "All",
+      "description": "Real-time discussions, and collaborative exercises facilitated during both in-class and online group sessions.",
+      "price": {
+        "@currency": "USD",
+        "#text": "50.00"
+      },
+      "lectors": {
+        "nameLector": "Isabella Ferero",
+        "nationality": "Spain",
+        "education": "Master's Degree in Spanish Linguistics",
+        "nativeLanguage": "Spanish",
+        "contact": {
+          "@lectorId": "4",
+          "email": "isabella.ferero@example.com"
+        }
+      },
+      "startDate": "2024-11-01",
+      "endDate": "2024-07-01",
+      "durationInHours": "2",
+      "capacity": "10",
+      "publishingDate": "2024-04-20",
+      "basicBookForCourse": "Classic Español!"
+    }
+  ],
+  "administrator": {
+    "administrator-data": {
+      "@administratorId": "11",
+      "@workPlace": "WordCraft Languahe school Chemická",
+      "firstname": "Eva",
+      "surname": "Prochazková",
+      "phoneNumber": "123-456-7890",
+      "email": "eva.prochazkova@example.com"
+    },
+    "mainPhoneNumber": "123-456-7890",
+    "workEmail": "craftschool@gmail.com"
+  }
+}

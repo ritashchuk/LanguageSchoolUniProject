@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="languageschool">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="course" maxOccurs="unbounded"/>
+                <xs:element name="nameSchool" type="xs:string" />
+                <xs:element name="address">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="street" type="xs:string" />
+                            <xs:element name="city" type="xs:string" />
+                            <xs:element name="country" type="xs:string" />
+                            <xs:element name="zipcode" type="xs:unsignedShort" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:attribute: name="branchOffice" type="xs:string"/>
+                <xs:attribute: name="resposibleForBrunch" type="xs:string"/>
+                <xs:element name="course">
+                    <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="title" type="xs:string"/>
+                        <xs:element name="language" type="xs:string"/>
+                        <xs:element name="level" type="xs:string"/>
+                        <xs:element name="description" type="xs:string"/>
+                        <xs:element name="price"/>
+                        <!-- Omezení pro prvek "price", hodnota musí být desetinné číslo. -->
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:decimal">
+                                            <xs:attribute name="currency" type="xs:string"/>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                        <xs:element name="lectors" type="xs:string">
+                            <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="nameLector" type="xs:string"/>
+                                <xs:element name="nationality" type="xs:string"/>
+                                <xs:element name="education" type="xs:string"/>
+                                <xs:element name="nativeLanguage" type="xs:string"/>
+                                <xs:element name="contact">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                        <xs:element name="email" type="xs:string"/>
+                                        </xs:sequence>
+                                        <!-- Omezení atributu "lectorId" na typ "xs:unsignedByte" pomocí atributu "use" zajišťuje, že hodnota tohoto atributu musí být kladné celé číslo a je povinná. -->
+                                        <xs:attribute name="lectorId" type="xs:unsignedByte" use="required"/>
+                                        <xs:attribute minOccurs="0" name="lectorRate" type="xs:decimal"/>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                        <xs:element name="startDate">
+                        <!--Omezení určuje, že hodnota "startDate" musí být aktuální datum nebo pozdější-->
+                            <xs:simpleType>
+                                <xs:restriction base="xs:date">
+                                    <xs:minInclusive value="yyyy-mm-dd"/>
+                                </xs:restriction>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="endDate" type="xs:date" />
+                        <xs:element name="durationInHours">
+                        <!-- Omezení "durationInHours" specifikuje, že atribut muže obsahovat jenom celá čísla a musí být nejmeně 1 a nejvíc 3  -->
+                                <xs:simpleType>
+                                    <xs:restriction base="xs:int">
+                                        <xs:minInclusive value="0"/> 
+                                        <xs:maxInclusive value="3"/> 
+                                    </xs:restriction>
+                                </xs:simpleType>
+                        </xs:element>
+                        <xs:element name="capacity">
+                        <!-- Omezení "capacity" na nezáporné celé číslo -->
+                            <xs:simpleType>
+                                <xs:restriction base="xs:nonNegativeInteger"/>
+                            </xs:simpleType>
+                        </xs:element>
+                        <xs:attribute name="courseId" type="xs:unsignedByte" use="required"/>
+                        <!-- Omezení atributu "courseId" na typ "xs:unsignedByte" pomocí atributu "use" zajišťuje, že hodnota tohoto atributu musí být kladné celé číslo a je povinná. -->
+                        <xs:attribute name= "publishingDate" type="xs:date"/>
+                        <xs:attribute name= "basicBookForCourse" type="xs:string"/>
+                    <xs:complexType>
+                    </xs:element>
+            </xs:sequence>
+                <xs:element name="administrator">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="administrator-data">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="firstname" type="xs:string"/>
+                                        <xs:element name="surname" type="xs:string"/>
+                                        <xs:element name="phoneNumber" type="xs:string"/>
+                                        <xs:element name="email" type="xs:string"/>
+                                    </xs:sequence>
+                                    <xs:attribute name="administratorId" type="xs:unsignedByte"/>
+                                    <xs:attribute name="workPlace" type="xs:string"/>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="mainPhoneNumber" type="xs:string" />
+                            <xs:element name="workEmail" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    </xs:complexType>
+    </xs:element>
+</xs:schema>

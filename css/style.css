@@ -1,0 +1,201 @@
+:root {
+    --color-primary: white;
+    --color-second: #e7bf2b;
+    --color-last: black;
+}
+
+/*BASE*/
+body {
+    background-color: var(--color-last);
+    color: var(--color-primary);
+    padding: 0 40px;
+    text-align: center;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+aside {
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/*button*/
+.button-more {
+    height: 40px;
+    color: var(--color-primary);
+    background: var(--color-second);
+    border: 10px solid var(--color-second);
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: 'Julius Sans One', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    align-self: flex-end;
+}
+
+.button-more:hover {
+    color: var(--color-second);
+    background-color: transparent;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    display: flex;
+    gap: 50px;
+}
+
+/*LINK*/
+.header-link {
+    color: var(--color-primary);
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.header-link:hover {
+    color: var(--color-second);
+    font-weight: 300;
+}
+
+/*TITLE*/
+h1 {
+    color: var(--color-primary);
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 60px;
+    margin: 0px;
+}
+
+.main-title-about {
+    font-weight: 500;
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.slogan {
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 20px;
+}
+
+.text-about {
+    color: var(--color-primary);
+    font-family: 'Bell MT', sans-serif;
+    font-size: 25px;
+}
+
+.section-title {
+    color: var(--color-primary);
+    font-weight: 900;
+    font-size: 35px;
+}
+
+.about-us-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 100px;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+/*Level-list section*/
+.levels-list {
+    color: var(--color-primary);
+    border: 2px solid var(--color-second);
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.levels-list:hover {
+    color: var(--color-second);
+}
+
+.courses {
+    color: var(--color-last);
+    font-weight: 900;
+    text-transform: capitalize;
+}
+
+.about-course {
+    color: var(--color-last);
+    font-family: 'Bell MT', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.address-link {
+    color: var(--color-primary);
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: lowercase;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.address-link:hover {
+    color: var(--color-second);
+}
+
+.rectangle {
+    display: flex;
+    width: 500px;
+    height: 450px;
+    background-color: var(--color-primary);
+    border: 3px solid var(--color-second);
+    padding: 20px;
+    box-shadow: 2px 2px 5px var(--color-second)(0, 0, 0, 5.5);
+    margin-bottom: 5px;
+}
+
+.row {
+    display: inline;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.img-size {
+    width: 250px;
+    height: 150px;
+}
+
+.logosize {
+    width: 70px;
+    height: 120px;
+}
+
+.img-size-main {
+    width: 400px;
+    height: 300px;
+}
+
+ul.section-cources {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 100px;
+}
+
+.footer-section-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px;
+    align-items: center;
+}
+
+.footer-section-info nav {
+    display: flex;
+    align-items: center;
+}

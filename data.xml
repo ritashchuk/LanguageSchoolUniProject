@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<languageschool>
+     <nameSchool>ABC Language School</nameSchool>
+            <address>
+                <street>Chemická 900</street>
+                <city>Praha</city>
+                <country>Česká republika</country>
+                <zipcode>148 00</zipcode>
+            </address> 
+
+    <course courseId="1">
+        <title>Intensive in-class and online group English courses</title>
+        <language>English</language>
+        <level>All</level>
+        <description>Dive into interactive lessons led by expert instructors and achieve fluency with the support of a dynamic
+                    learning community.</description>
+        <price currency="USD">50.00</price>
+        <lectors>
+            <nameLector>Robert Gilbert</nameLector>
+            <nationality>USA</nationality>
+            <education>MA in English Linguistics</education>
+            <nativeLanguage>English</nativeLanguage>
+            <contact lectorId="1">
+                <email>robert.gilbert@example.com</email>
+            </contact>
+        </lectors>
+        <startDate>2024-09-01</startDate>
+        <endDate>2024-07-01</endDate>
+        <durationInHours>2</durationInHours>
+        <capacity>10</capacity>
+        <publishingDate>2024-04-20</publishingDate>
+        <basicBookForCourse>SpeakOut</basicBookForCourse>
+    </course>
+    
+    <course courseId="2">
+        <title>Intensive in-class and online group Czech courses</title>
+        <language>English</language>
+        <level>All</level>
+        <description>Provide rapid language acquisition and fluency, combining traditional classroom instruction with digital tools.</description>
+        <price currency="USD">50.00</price>
+        <lectors>
+            <nameLector>Josef Petr</nameLector>
+            <nationality>Czech Republic</nationality>
+            <education>Ph.D. in Czech Language and Literature</education>
+            <nativeLanguage>Czech</nativeLanguage>
+            <contact lectorId="2">
+                <email>josef.petr@example.com</email>
+            </contact>
+        </lectors>
+        <startDate>2024-07-01</startDate>
+        <endDate>2024-07-01</endDate>
+        <durationInHours>2</durationInHours>
+        <capacity>10</capacity>
+        <publishingDate>2024-04-20</publishingDate>
+        <basicBookForCourse>Čeština pro cizince</basicBookForCourse>
+    </course>
+
+    <course courseId="3">
+        <title>Intensive in-class and online group German courses</title>
+        <language>German</language>
+        <level>All</level>
+        <description>Ensuring rapid language mastery through immersive experiences and collaborative learning.</description>
+        <price currency="USD">50.00</price>
+        <lectors>
+            <nameLector>Mirabella Schwarz</nameLector>
+            <nationality>Germany</nationality>
+            <education>Master's Degree in German Studies</education>
+            <nativeLanguage>German</nativeLanguage>
+            <contact lectorId="3">
+                <email>mirabella.schwarz@example.com</email>
+            </contact>
+        </lectors>
+        <startDate>2024-05-01</startDate>
+        <endDate>2024-07-01</endDate>
+        <durationInHours>2</durationInHours>
+        <capacity>10</capacity>
+        <publishingDate>2024-04-20</publishingDate>
+        <basicBookForCourse>Willkommen!</basicBookForCourse>
+    </course>
+
+    <course courseId="4">
+        <title>Intensive in-class and online group Spanish courses</title>
+        <language>Spanish</language>
+        <level>All</level>
+        <description>Real-time discussions, and collaborative exercises facilitated during both in-class and online group sessions.</description>
+        <price currency="USD">50.00</price>
+        <lectors>
+            <nameLector>Isabella Ferero</nameLector>
+            <nationality>Spain</nationality>
+            <education>Master's Degree in Spanish Linguistics</education>
+            <nativeLanguage>Spanish</nativeLanguage>
+            <contact lectorId="4">
+                <email>isabella.ferero@example.com</email>
+            </contact>
+        </lectors>
+        <startDate>2024-11-01</startDate>
+        <endDate>2024-07-01</endDate>
+        <durationInHours>2</durationInHours>
+        <capacity>10</capacity>
+        <publishingDate>2024-04-20</publishingDate>
+        <basicBookForCourse>Classic Español!</basicBookForCourse>
+    </course>
+
+    <administrator>
+        <administrator-data administratorId="11" workPlace="WordCraft Languahe school Chemická">
+            <firstname>Eva</firstname>
+            <surname>Prochazková</surname>
+            <phoneNumber>123-456-7890</phoneNumber>
+            <email>eva.prochazkova@example.com</email>
+        </administrator-data>
+        <mainPhoneNumber>123-456-7890</mainPhoneNumber>
+        <workEmail>craftschool@gmail.com</workEmail>
+    </administrator>
+</languageschool>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <meta name="description" content="Language school WordCraft">
+    <meta name="keywords" content="language, school, study">
+    <meta name="author" content="Marharyta Shchukina">
+
+    <meta property="og:title" content="WordCraft">
+    <meta property="og:description" content="Language school WordCraft">
+    <meta property="og:image" content="./assets/logo.svg">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:type" content="website">
+
+    <meta name="itemprop" content="WordCraft" itemprop="name">
+    <meta name="itemprop" content="Language school WordCraft" itemprop="description">
+    <meta name="itemprop" content="./assets/logo.svg" itemprop="image">
+    <meta name="itemprop" content="https://example.com/" itemprop="url">
+
+    <title>WordCraft</title>
+    <!--Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/style.css">
+
+</head>
+<script type="application/ld+json">
+      { "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "WordCraft Language School",
+      "url": "https://example.com/",
+      "logo": "./assets/logo.svg",
+      "description": "WordCraft Language School",
+      "priceRange": $",
+      "courses":{
+        "@type": Product,
+        "price": 50,
+        "priceCurrency": $,
+      },
+      "lectors":{
+      "@type": Person, 
+      name: "Robert Gilbert",
+      country: "USA",
+      },
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Chemická 900",
+        "addressLocality": "Prague 4",
+        "postalCode": "148 00",
+        "addressCountry": "Czech Republic"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+420 700 800 700",
+        "contactType": "customer service"
+      }
+      }
+     </script>
+
+<body>
+    <header itemscope itemtype="http://schema.org/WebSite">
+        <nav>
+            <a href="./index.html">
+                <img class="logosize" src="./assets/logo.svg" alt="school's logo">
+            </a>
+            <ul>
+                <li><a class="header-link" href="#about-us-section">About us</a></li>
+                <li><a class="header-link" href="#langage-courses-section">Language courses</a></li>
+                <li><a class="header-link" href="#contacts">Contacts</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div class="title-section">
+                <h1>WordCraft</h1>
+                <h2 class="slogan">Crafting Fluency, Shaping Futures</h2>
+            </div>
+        </section>
+
+        <section id="about-us-section">
+            <h2 class="section-title">About us</h2>
+            <div class="about-us-grid">
+                <img class="img-size-main" src="./assets/aboutus.jpg" alt="Four-pic">
+                <p class="text-about">
+                    <span class="main-title-about">WordCraft</span> Language School is your premier destination for
+                    language. Offering a diverse range of language courses, We provide top-notch study materials,
+                    professional translation services,
+                    and exciting opportunities to study abroad, enabling our students to truly immerse themselves in the
+                    beauty of language
+                    and diverse cultures.
+                </p>
+            </div>
+        </section>
+
+        <section id="langage-courses-section" itemscope itemtype="http://schema.org/Article">
+            <ul>
+                <li class="levels-list">A1-Total Beginner</li>
+                <li class="levels-list">A2-Pre-Inermediate</li>
+                <li class="levels-list">B1-Intermediate</li>
+                <li class="levels-list">B2-Upper Intermediate</li>
+                <li class="levels-list">C1-Advanced</li>
+            </ul>
+            <h2 class="section-title">Language courses</h2>
+            <ul class="section-cources">
+                <li>
+                    <div class="row">
+                        <div class="rectangle">
+                            <article itemscope itemtype="http://schema.org/Courses">
+                                <h3 class="courses">Intensive in-class & online group English courses</h3>
+                                <p class="about-course">
+                                    Dive into interactive lessons led by expert instructors and achieve fluency with the
+                                    support of a dynamic
+                                    learning community.
+                                </p>
+                                <p class="about-course" itemprop="lectors">
+                                    <span class="main-title-about">Lector:</span> Robert Gilbert (USA)
+                                </p>
+                                <p class="about-course" itemprop="price">
+                                    <span class="main-title-about">Price:</span> from 50$ per hour
+                                </p>
+                                <img class="img-size" src="./assets/english-course.jpg" alt="English class">
+                            </article>
+                            <button class="button-more" type="button" itemprop="knowMore">More</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="row">
+                        <div class="rectangle">
+                            <article itemscope itemtype="http://schema.org/Courses">
+                                <h3 class="courses">Intensive in-class & online group Czech courses</h3>
+                                <p class="about-course">
+                                    Provide rapid language acquisition and fluency, combining traditional classroom
+                                    instruction with digital tools.
+                                </p>
+                                <p class="about-course" itemprop="lectors">
+                                    <span class="main-title-about">Lector:</span> Josef Petr (Czech Republic)
+                                </p>
+                                <p class="about-course" itemprop="price">
+                                    <span class="main-title-about">Price:</span> from 50$ per hour
+                                </p>
+                                <img class="img-size" src="./assets/czech-course.jpg" alt="Czech-course">
+                            </article>
+                            <button class="button-more" type="button" itemprop="knowMore">More</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="row">
+                        <div class="rectangle">
+                            <article itemscope itemtype="http://schema.org/Courses">
+                                <h3 class="courses">Intensive in-class & online group German courses</h3>
+                                <p class="about-course">
+                                    Ensuring rapid language mastery through immersive experiences and collaborative
+                                    learning.
+                                </p>
+                                <p class="about-course" itemprop="lectors">
+                                    <span class="main-title-about">Lector:</span> Mirabella Schwarz (Germany)
+                                </p>
+                                <p class="about-course" itemprop="price">
+                                    <span class="main-title-about">Price:</span> from 50$ per hour
+                                </p>
+                                <img class="img-size" src="./assets/german-course.jpg"
+                                    alt="Teacher standing in front of the classs">
+                            </article>
+                            <button class="button-more" type="button" itemprop="knowMore">More</button>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="row">
+                        <div class="rectangle">
+                            <article itemscope itemtype="http://schema.org/Courses">
+                                <h3 class="courses">Intensive in-class & online group Spanish courses</h3>
+                                <p class="about-course">
+                                    Real-time discussions, and collaborative exercises facilitated during both in-class
+                                    and online group sessions.
+                                </p>
+                                <p class="about-course" itemprop="lectors">
+                                    <span class="main-title-about">Lector:</span> Isabella Ferero (Spain)
+                                </p>
+                                <p class="about-course" itemprop="price">
+                                    <span class="main-title-about">Price:</span> from 50$ per hour
+                                </p>
+                                <img class="img-size" src="./assets/french-course.jpg" alt="French course">
+                            </article>
+                            <button class="button-more" type="button" itemprop="knowMore">More</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <fat footer id="contacts">
+        <div class="footer-section-info">
+            <nav>
+                <a href="#">
+                    <img class="logosize" src="./assets/logo.svg" alt="school's logo">
+                </a>
+                <ul class="section-contact-row">
+                    <li><a class="header-link" href="#about-us-section">About us</a></li>
+                    <li><a class="header-link" href="#langage-courses-section">Language courses</a></li>
+                </ul>
+            </nav>
+            <aside itemscope itemtype="http://schema.org/ContactPoint">
+                <ul>
+                    <li><a class="address-link" href="tel:+420700800700">+420 700 800 700</a></li>
+                    <li><a class="address-link" href="mailto:craftschool@gmail.com">craftschool@gmail.com</a></li>
+                    <li><a class="address-link" href="https://maps.app.goo.gl/jqUsyATDip8zHB1x8" target="_blank">Czech
+                            Republic,
+                            Prague 4, Chemická 900, 148 00</a></li>
+                    <li><a class="address-link" href="http://facebook.com"> Facebook</a></li>
+                    <li><a class="address-link" href="http://instagram.com"> Instagram</a></li>
+                </ul>
+            </aside>
+        </div>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.284923866893!2d14.4935526!3d50.024756700000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b922eae0b3437%3A0x4faf083cdc2da0d3!2sKulturn%C3%AD%20Centrum%20Zahrada!5e0!3m2!1sru!2scz!4v1713127711530!5m2!1sru!2scz"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </fat footer>
+</body>
+
+</html>
